@@ -147,13 +147,11 @@ button {
     html {
         width: 100%;;
         padding: 20px;
-        background-color: gainsboro;
     }
 
     .logo {
         margin-bottom: 30px;
         order: 1;
-        background-color: red;
     }
 
     .nav-section{
@@ -164,6 +162,7 @@ button {
     
     .nav-section > nav {
         order: 99;
+        width: 100%;
     }
 
     .header-img {
@@ -182,4 +181,68 @@ button {
 
 @media(max-width: 500px){
 
+    html {
+        width: 100%;;
+        padding: 0;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .logo {
+        display: flex;
+        width: 100%;
+        border-bottom: 1px solid gray;
+        justify-content: center;
+        margin-bottom: 0px;
+        padding-bottom: 20px;
+    }
+
+    nav > a {
+        border-bottom: 1px solid gray;
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+        
+    }
+
+    #Middle-content {
+        margin: 20px;
+    }
+
+    .contact {
+        padding: 20px;
+    }
+
+    .Top-section {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0;
+    }
+    
+    .Bottom-section {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 20px 20px 0;
+    }
+
+    p {
+        padding: 20px 0;
+    }
+
+    h2 {
+        margin-bottom: 0px;
+    }
+
+    .contact {
+        margin: 0;
+    }
+    
+    .contact>p {
+        margin: 0;
+        padding: 10px 0;
+    }
 }
